@@ -1,0 +1,18 @@
+server:
+  port: 8081
+#配置应用名称
+spring:
+  application:
+    name: eureka-client
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  instance:
+    hostname: clientName
+

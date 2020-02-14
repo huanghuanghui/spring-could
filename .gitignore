@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 eureka/.mvn
+client/.mvn
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -30,3 +31,4 @@ build/
 ### VS Code ###
 .vscode/
 /eureka/.mvn/
+/client/.mvn/
