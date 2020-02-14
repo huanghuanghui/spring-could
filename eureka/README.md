@@ -1,0 +1,2 @@
+选择创建spring项目，勾选dependency eureka service
+配置需要的application.yml @EnableEurekaService 打开eureka注册中心
