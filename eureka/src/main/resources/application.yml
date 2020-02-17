@@ -9,6 +9,6 @@ eureka:
     #    不能这么写，无法注册eureka服务
     #    service-url: http://127.0.0.1:8761/eureka  service-url是一个map
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://127.0.0.1:8762/eureka
     #      本项目为注册中心，无需出现在服务列表
     register-with-eureka: false

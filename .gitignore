@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 eureka/.mvn
+product/.mvn
 client/.mvn
 ### NetBeans ###
 /nbproject/private/
