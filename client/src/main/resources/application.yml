@@ -13,6 +13,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
-  instance:
-    hostname: clientName
+#      eureka控制台status后自定义的网址地址，不配置将显示本机ip:client，这个配置的为自定义连接
+#  instance:
+#    hostname: clientName
 

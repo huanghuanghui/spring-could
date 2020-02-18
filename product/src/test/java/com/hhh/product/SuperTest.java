@@ -1,15 +1,15 @@
 package com.hhh.product;
 
-import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+/**
+ * @author hhh
+ * @date 2020/2/17 17:16
+ * @Despriction
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class ProductApplicationTests {
-
-  @Test
-  void contextLoads() {
-  }
+public class SuperTest {
 }

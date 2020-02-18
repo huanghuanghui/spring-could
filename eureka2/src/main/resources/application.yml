@@ -1,0 +1,15 @@
+#使用eureka默认端口，作为服务的注册中心，便于管理项目
+server:
+  port: 8762
+spring:
+  application:
+    name: hhh-eureka
+#    可以访问该注册端口查看注册的服务，使用心跳的方式，间隔注册
+eureka:
+  client:
+#    不能这么写，无法注册eureka服务
+#    service-url: http://127.0.0.1:8761/eureka  service-url是一个map
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+#      本项目为注册中心，无需出现在服务列表
+    register-with-eureka: false

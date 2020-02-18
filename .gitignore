@@ -33,3 +33,5 @@ build/
 .vscode/
 /eureka/.mvn/
 /client/.mvn/
+/eureka2/.mvn/
+/product/.mvn/
