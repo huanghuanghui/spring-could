@@ -32,6 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 /eureka/.mvn/
+/order/.mvn/
 /client/.mvn/
 /eureka2/.mvn/
 /product/.mvn/
