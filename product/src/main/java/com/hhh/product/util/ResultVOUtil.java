@@ -3,7 +3,7 @@ package com.hhh.product.util;
 import com.hhh.product.VO.ResultVO;
 
 /**
- * Created by 廖师兄
+ *
  * 2017-12-09 22:53
  */
 public class ResultVOUtil<T> {
