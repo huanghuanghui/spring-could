@@ -1,0 +1,15 @@
+# 让配置先启动
+server:
+  port: 8083
+#配置应用名称
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+#        填写注册到eureka上的应用名称
+        service-id: CONFIG
+#        拼接的连接为 http://ip:port/applicationName-profile
+      profile: dev

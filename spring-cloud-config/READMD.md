@@ -13,3 +13,17 @@
 - /{name}-{profiles}.yml || /{name}-{profiles}.properties || /{name}-{profiles}.json
 - /{label}/{name}-{profiles}.yml
 - name:服务名，profiles:环境，label:{git分支，默认master}
+
+**配置client端**  
+- 去除服务端配置代码，以order为例  
+
+```xml
+    <!--配置中心化-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-config-client</artifactId>
+    </dependency>
+```
+- 删除原配置代码
+- 将client端的application.yml修改为bootstrap.yml，优先拉取远程配置后启动
+
