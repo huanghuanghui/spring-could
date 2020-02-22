@@ -24,6 +24,7 @@
     <module>eureka2</module>
     <module>order</module>
     <module>product</module>
+    <module>spring-cloud-config</module>
   </modules>
 
   <properties>

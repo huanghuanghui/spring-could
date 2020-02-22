@@ -1,0 +1,23 @@
+#使用eureka默认端口，作为服务的注册中心，便于管理项目
+server:
+  port: 8760
+spring:
+  application:
+    name: config
+#    配置git仓库地址
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huanghuanghui/conifg-repo.git
+          username: huanghaunghui
+          password: Huang^2019*
+#          配置拉取的远程配置文件本地路径
+          basedir: E:\codeBase\spring-could\spring-cloud-config\base_dir
+#    可以访问该注册端口查看注册的服务，使用心跳的方式，间隔注册
+eureka:
+  client:
+#    service-url: http://127.0.0.1:8761/eureka  service-url是一个map
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
+
