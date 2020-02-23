@@ -9,3 +9,4 @@
 - Docker：Docker镜像容器（自顶向下打包应用、轻量级、可复用、版本化）
 - Devops：Devops自动化运维，提升交付速度
 - Spring-could-config：统一配置中心
+- Spring Could Bus：信息总线

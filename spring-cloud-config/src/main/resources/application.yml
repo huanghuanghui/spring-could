@@ -20,4 +20,11 @@ eureka:
 #    service-url: http://127.0.0.1:8761/eureka  service-url是一个map
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka,http://127.0.0.1:8762/eureka
+#暴露接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
