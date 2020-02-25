@@ -14,6 +14,15 @@ spring:
           password: Huang^2019*
 #          配置拉取的远程配置文件本地路径
           basedir: E:\codeBase\spring-could\spring-cloud-config\base_dir
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 192.168.1.189
+    port: 5672
+    username: huanghuanghui
+    password: Huang123
 #    可以访问该注册端口查看注册的服务，使用心跳的方式，间隔注册
 eureka:
   client:

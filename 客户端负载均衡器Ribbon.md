@@ -24,7 +24,7 @@
 
 - 获取服务列表：`BaseLoadBalancer.getAllServers()`
 
-```java
+```text
     public List<Server> getAllServers() {
         return Collections.unmodifiableList(this.allServerList);
     }
@@ -40,7 +40,7 @@
 
 Ribbon负载均衡种类：查看`IRule`接口的实现即可
 
-```xml
+```text
 PRODUCT:
   ribbon: 
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
