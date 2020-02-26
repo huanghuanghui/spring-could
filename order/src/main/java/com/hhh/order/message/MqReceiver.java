@@ -36,7 +36,7 @@ public class MqReceiver {
    */
   @RabbitListener(bindings = @QueueBinding(
             value = @Queue("product-info"),
-            exchange = @Exchange("myExchange2")
+            exchange = @Exchange("myExchange")
     ))
     public void productInfo(String message) {
         log.info("收到product消息为: {}", message);

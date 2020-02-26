@@ -25,6 +25,7 @@
     <module>order</module>
     <module>product</module>
     <module>spring-cloud-config</module>
+    <module>api-gateway</module>
   </modules>
 
   <properties>

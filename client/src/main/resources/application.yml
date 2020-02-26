@@ -3,7 +3,7 @@ server:
 #配置应用名称
 spring:
   application:
-    name: eureka-client
+    name: client
   cloud:
     loadbalancer:
       ribbon:

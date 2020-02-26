@@ -11,6 +11,7 @@
 - Spring-Cloud-Config：统一配置中心
 - Spring Cloud Bus：信息总线（依赖RabbitMQ或Kafka）
 - Spring Cloud Stream：消息中间件
+- 服务网关与Zuul：高可用与稳定性、性能与并发、安全性、扩展性
 
 
 **微服务关系图**

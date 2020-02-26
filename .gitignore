@@ -36,5 +36,5 @@ build/
 /client/.mvn/
 /eureka2/.mvn/
 /product/.mvn/
-/spring-cloud-config/.mvn/
+/api-gateway/.mvn/
 /spring-cloud-config/base_dir/.idea
