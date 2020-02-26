@@ -1,6 +1,6 @@
 package com.hhh.order.message;
 
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @date 2020/2/25 15:38
  * @Despriction 接受MQ消息
  */
-@Slf4j
+@Log4j2
 @Component
 public class MqReceiver {
 
@@ -28,6 +28,18 @@ public class MqReceiver {
     ))
     public void process(String message) {
         log.info("MqReceiver: {}", message);
+    }
+
+  /**
+   * 接收product-info的消息
+   * @param message
+   */
+  @RabbitListener(bindings = @QueueBinding(
+            value = @Queue("product-info"),
+            exchange = @Exchange("myExchange2")
+    ))
+    public void productInfo(String message) {
+        log.info("收到product消息为: {}", message);
     }
 
     /**

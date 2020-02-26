@@ -15,7 +15,7 @@ spring:
       profile: dev
 #      服务分组，将一个服务划分到一个组总，在同组内，同个组内不管有多少个实例，只会有一个实例来消费消息
     stream:
-      binders:
+      bindings:
         myMessage:
           group: order
 #          MQ 中的消息显示类型，当消息堆积时，可以查看消息具体内容而不是base64编码后的对象字符串

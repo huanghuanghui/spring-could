@@ -12,3 +12,41 @@
       <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
     </dependency>
 ```
+- 创建input与output
+```java
+/**
+ * @author hhh
+ * @date 2020/2/25 15:38
+ * @Despriction Spring Cloud Stream 消息中间件消息发送与接收
+ */
+public interface StreamClient {
+
+    String INPUT = "myMessage";
+
+    String INPUT2 = "myMessage2";
+
+    @Input(StreamClient.INPUT)
+    SubscribableChannel input();
+
+    @Output(StreamClient.INPUT2)
+    MessageChannel output();
+}
+```
+- 接收端
+```java
+/**
+ * @author hhh
+ * @date 2020/2/25 15:38
+ * @Despriction Spring Cloud Stream：消息中间件 接受MQ消息
+ */
+@Component
+@EnableBinding(StreamClient.class)
+@Log4j2
+public class StreamReceiver {
+    @StreamListener(value = StreamClient.INPUT)
+    //    @SendTo(StreamClient.INPUT2)
+    public void process(Object message) {
+        log.info("StreamReceiver: {}", message);
+    }
+}
+```
