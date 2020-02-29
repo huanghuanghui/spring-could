@@ -29,6 +29,10 @@ public class AddResponseHeader extends ZuulFilter {
         return SEND_RESPONSE_FILTER_ORDER - 1;
     }
 
+    /**
+     * true 需要拦截，false不需要，可以根据具体的业务逻辑来判断，确认拦截后，拦截后具体的处理逻辑写在run()方法中
+     * @return 是否需要拦截
+     */
     @Override
     public boolean shouldFilter() {
         return true;

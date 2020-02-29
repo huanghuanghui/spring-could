@@ -13,3 +13,6 @@ spring:
         service-id: CONFIG
 #        拼接的连接为 http://ip:port/applicationName-profile
       profile: dev
+zuul:
+#全部服务忽略敏感头（比如要往cookies中写值，若没有忽略，cookies值会丢失）
+  sensitive-headers:

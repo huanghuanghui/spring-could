@@ -20,3 +20,12 @@ spring:
           group: order
 #          MQ 中的消息显示类型，当消息堆积时，可以查看消息具体内容而不是base64编码后的对象字符串
           content-type: application/json
+
+#配置后，在需要服务降级的方法中添加注解@HystrixCommand()即可
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 1000

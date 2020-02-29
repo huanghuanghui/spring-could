@@ -64,5 +64,13 @@ public class ZuulConfig {
 }
 ```
 ### 限流
-使用谷歌Guava令牌桶限流
+使用谷歌Guava令牌桶限流，详情见`RateLimitFilter`
 ![image-20200229095906223](http://jn-hhh.oss-cn-hangzhou.aliyuncs.com/image-20200229095906223.png)
+
+### Zuul跨域
+- 跨域问题
+- 在被调用的类或方法上增加@CrossOrigin(allowCredentials = "true")
+- 在Zuul中添加CrossFilter过滤器（CrossOriginConfig）
+
+### 鉴权
+- 前置过滤器中实现相关逻辑

@@ -14,8 +14,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
+    private final UserInfoRepostory repostory;
+
     @Autowired
-    private UserInfoRepostory repostory;
+    public UserServiceImpl(UserInfoRepostory repostory) {
+        this.repostory = repostory;
+    }
 
     /**
      * 通过openid来查询用户信息

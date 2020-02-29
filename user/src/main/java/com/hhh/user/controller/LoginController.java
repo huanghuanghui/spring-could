@@ -27,11 +27,15 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/login")
 public class LoginController {
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
+
+    private final StringRedisTemplate stringRedisTemplate;
 
     @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+    public LoginController(UserService userService,StringRedisTemplate stringRedisTemplate) {
+        this.userService = userService;
+        this.stringRedisTemplate = stringRedisTemplate;
+    }
 
     /**
      * 买家登录
@@ -50,7 +54,7 @@ public class LoginController {
         }
 
         //2. 判断角色
-        if (RoleEnum.BUYER.getCode() != userInfo.getRole()) {
+        if (userInfo.getRole().equals(RoleEnum.BUYER.getCode())) {
             return ResultVOUtil.error(ResultEnum.ROLE_ERROR);
         }
 
@@ -78,7 +82,7 @@ public class LoginController {
         }
 
         //2. 判断角色
-        if (RoleEnum.SELLER.getCode() != userInfo.getRole()) {
+        if (userInfo.getRole().equals(RoleEnum.SELLER.getCode())){
             return ResultVOUtil.error(ResultEnum.ROLE_ERROR);
         }
 
