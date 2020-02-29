@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * @author hhh
  * @date 2020/2/18 16:43
- * @Despriction 测试发送消息
+ * @description 测试发送消息
  */
 @RestController
 @RequestMapping("/v1")

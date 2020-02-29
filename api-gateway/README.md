@@ -27,7 +27,7 @@ public class ApiGatewayApplication {
 /**
  * @author hhh
  * @date 2020/2/26 17:29
- * @Despriction 配置属性，自动更新zuul属性
+ * @description 配置属性，自动更新zuul属性
  */
 public class ZuulConfig {
   @ConfigurationProperties(prefix = "zuul")

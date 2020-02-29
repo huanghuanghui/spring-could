@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * @author hhh
  * @date 2020/2/25 16:44
- * @Despriction 发送MQ消息测试
+ * @description 发送MQ消息测试
  */
 public class SendMessage extends SuperTest {
   @Autowired

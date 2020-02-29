@@ -39,11 +39,6 @@
       <version>${druid.version}</version>
     </dependency>
 
-    <!--feign-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-openfeign</artifactId>
-    </dependency>
 
     <!--配置中心化-->
     <dependency>

@@ -5,7 +5,7 @@ import lombok.Getter;
 /**
  * @author hhh
  * @date 2020/2/17 17:09
- * @Despriction
+ * @description
  */
 @Getter
 public enum ProductStatusEnum {

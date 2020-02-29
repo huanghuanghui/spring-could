@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * @author hhh
  * @date 2020/2/20 16:10
- * @Despriction 调用接口
+ * @description 调用接口
  */
 //name 表示需要访问那个应用的接口
 @FeignClient(name = "PRODUCT")

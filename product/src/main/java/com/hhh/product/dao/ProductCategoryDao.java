@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author hhh
  * @date 2020/2/17 16:57
- * @Despriction
+ * @description
  */
 public interface ProductCategoryDao extends JpaRepository<ProductCategory, Integer> {
 

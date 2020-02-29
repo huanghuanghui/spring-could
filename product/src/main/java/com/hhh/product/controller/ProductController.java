@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 /**
  * @author hhh
  * @date 2020/2/17 17:04
- * @Despriction
+ * @description
  */
 @RestController
 @RequestMapping("/product")

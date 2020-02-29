@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author hhh
  * @date 2020/2/17 17:23
- * @Despriction
+ * @description
  */
 @Service
 public class CategoryServiceImpl implements CategoryService {

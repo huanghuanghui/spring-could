@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author hhh
  * @date 2020/2/25 15:37
- * @Despriction
+ * @description
  */
 @ConfigurationProperties(prefix = "project")
 @Data

@@ -53,7 +53,7 @@ public class ApiGatewayApplication {
 /**
  * @author hhh
  * @date 2020/2/26 17:29
- * @Despriction 配置属性，自动更新zuul属性
+ * @description 配置属性，自动更新zuul属性
  */
 public class ZuulConfig {
   @ConfigurationProperties(prefix = "zuul")
@@ -63,3 +63,6 @@ public class ZuulConfig {
   }
 }
 ```
+### 限流
+使用谷歌Guava令牌桶限流
+![image-20200229095906223](http://jn-hhh.oss-cn-hangzhou.aliyuncs.com/image-20200229095906223.png)

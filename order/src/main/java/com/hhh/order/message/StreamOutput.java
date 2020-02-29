@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author hhh
  * @date 2020/2/26 15:06
- * @Despriction
+ * @description
  */
 @Component
 public interface StreamOutput {

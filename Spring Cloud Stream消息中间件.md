@@ -17,7 +17,7 @@
 /**
  * @author hhh
  * @date 2020/2/25 15:38
- * @Despriction Spring Cloud Stream 消息中间件消息发送与接收
+ * @description Spring Cloud Stream 消息中间件消息发送与接收
  */
 public interface StreamClient {
 
@@ -37,7 +37,7 @@ public interface StreamClient {
 /**
  * @author hhh
  * @date 2020/2/25 15:38
- * @Despriction Spring Cloud Stream：消息中间件 接受MQ消息
+ * @description Spring Cloud Stream：消息中间件 接受MQ消息
  */
 @Component
 @EnableBinding(StreamClient.class)

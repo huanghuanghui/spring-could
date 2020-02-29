@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+#        填写注册到eureka上的应用名称(指的是配置中心在Eureka上的名称)
+        service-id: CONFIG
+server:
+  port: 8085

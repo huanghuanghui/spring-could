@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author hhh
  * @date 2020/2/18 16:43
- * @Despriction 服务间的通讯
+ * @description 服务间的通讯
  */
 @RestController
 @RequestMapping("/order-client")

@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author hhh
  * @date 2020/2/18 17:16
- * @Despriction
+ * @description
  */
 @Component
 public class RestTemplateConfig {

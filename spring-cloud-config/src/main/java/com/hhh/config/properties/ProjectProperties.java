@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author hhh
  * @date 2020/2/23 13:57
- * @Despriction
+ * @description
  */
 @Data
 @RefreshScope

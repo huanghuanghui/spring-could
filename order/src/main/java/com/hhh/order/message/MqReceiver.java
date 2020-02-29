@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author hhh
  * @date 2020/2/25 15:38
- * @Despriction 接受MQ消息
+ * @description 接受MQ消息
  */
 @Log4j2
 @Component

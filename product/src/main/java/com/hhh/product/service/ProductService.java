@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author hhh
  * @date 2020/2/17 17:12
- * @Despriction
+ * @description
  */
 public interface ProductService {
   List<ProductInfo> findAllUpProduct();

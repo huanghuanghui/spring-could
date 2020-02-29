@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @author hhh
  * @date 2020/2/17 17:15
- * @Despriction
+ * @description
  */
 @Component
 class ProductServiceImplTest extends SuperTest {

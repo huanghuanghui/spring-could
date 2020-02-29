@@ -3,7 +3,7 @@ package com.hhh.product.util;
 /**
  * @author hhh
  * @date 2020/2/18 9:04
- * @Despriction
+ * @description
  */
 public class Constant {
 

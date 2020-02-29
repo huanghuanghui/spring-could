@@ -163,3 +163,16 @@ INSERT INTO `product_info` VALUES (1, '蛋糕', 10.00, 10, '好吃的蛋糕', NU
 INSERT INTO `product_info` VALUES (2, '香肠', 1.80, 50, '烤香肠', NULL, 0, 2, '2020-02-17 16:40:53', '2020-02-17 16:40:55');
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+CREATE TABLE `user_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `openid` int(11) DEFAULT NULL,
+  `role` tinyint(1) NOT NULL COMMENT '买家1卖家2',
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

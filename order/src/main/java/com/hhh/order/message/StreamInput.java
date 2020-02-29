@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author hhh
  * @date 2020/2/25 15:38
- * @Despriction Spring Cloud Stream 消息中间件消息发送与接收
+ * @description Spring Cloud Stream 消息中间件消息发送与接收
  */
 @Component
 public interface StreamInput {

@@ -1,6 +1,6 @@
 # 让配置先启动
 server:
-  port: 8084
+  port: 8080
 #配置应用名称
 spring:
   application:

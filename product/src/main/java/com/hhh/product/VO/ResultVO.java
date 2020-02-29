@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * @author hhh
  * @date 2020/2/18 8:52
- * @Despriction
+ * @description
  */
 @Data
 public class ResultVO<T> implements Serializable {
