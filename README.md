@@ -12,7 +12,6 @@
 - Spring Cloud Bus：信息总线（依赖RabbitMQ或Kafka）
 - Spring Cloud Stream：消息中间件
 - 服务网关与Zuul：高可用与稳定性、性能与并发、安全性、扩展性
-- 服务网关与Zuul：高可用与稳定性、性能与并发、安全性、扩展性
 - Hystrix：服务容错、降级、熔断
 - Spring Cloud Sleuth：链路监控
 - zipkin：Twitter开源微服务链路追踪工具
