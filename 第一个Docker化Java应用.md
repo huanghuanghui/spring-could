@@ -114,6 +114,9 @@ Debug your app, not your environment
 ### 8、Docker化的Java web
 
 - DockerFile：用来告诉Docker我要如何制作镜像
-
 - DockerBuild： 用来执行DockerFile描述的每一件事，最终构建镜像
-
+- 构建docker项目：https://www.jianshu.com/p/397929dbc27d
+- Linux查看端口启动状态 
+```text
+netstat -na| grep 端口
+```
